@@ -9,6 +9,11 @@ then
     `which curl` -s https://ltuc.github.io/new-prep-challenge-content/day-$1/README.md > ./code-challenges/challenges-$1/README.md
 
 else
-    `which curl` -s https://ltuc.github.io/new-prep-challenge-content/day-$1/Challenge$1.js > ./code-challenges/challenges-$1.js
-    `which curl` -s https://ltuc.github.io/new-prep-challenge-content/day-$1/Challenge$1.test.js > ./test/challenges-$1.test.js
+    `which curl` -s https://github.com/LTUC/new-prep-challenge-content/blob/main/day-$1/Challenge$1.js > ./code-challenges/challenges-$1.js
+    `which curl` -s https://github.com/LTUC/new-prep-challenge-content/blob/main/day-$1/Challenge$1.test.js > ./test/challenges-$1.test.js
 fi
+
+
+# https://ltuc.github.io/new-prep-challenge-content/day-$1/Challenge$1.js
+# https://ltuc.github.io/new-prep-challenge-content/day-$1/Challenge$1.test.js
+
